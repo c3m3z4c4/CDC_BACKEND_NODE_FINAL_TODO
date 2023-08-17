@@ -56,5 +56,14 @@ router.post('/users/signup', async (req, res) => {
   }
 });
 
+router.get("/users/logout", function(req, res, next) {
+  req.logout(function(err) {
+    if (err) {
+      return next(err);
+    }
+    res.redirect("/");
+  });
+});
+
 
 module.exports = router;
