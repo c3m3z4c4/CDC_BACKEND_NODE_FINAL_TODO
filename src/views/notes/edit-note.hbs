@@ -1,0 +1,23 @@
+<div class="md-col-4 mx-auto">
+  <div class="card">
+    <div class="card-header">
+      <h3>Edit Note</h3>
+    </div>
+    <div class="card-body">
+      <form action="/notes/edit-note/{{note._id}}?_method=PUT" method="post">
+        <input type="hidden" name="_method" value="PUT">
+        <div class="nes-field is-inline">
+          <input type="text" name="title" class="nes-input is-success mb-3" value="{{note.title}}">
+        </div>
+        <div class="nes-field is-inline">
+          <textarea name="description" class="nes-input is-success mb-3" placeholder="Description">{{note.description}}</textarea>
+        </div>
+        <div class="d-grid gap-2">
+          <button class="nes-btn is-success" type="submit">
+            Save
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
