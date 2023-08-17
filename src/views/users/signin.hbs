@@ -1,1 +1,24 @@
-<h1>Ingresar</h1>
+
+<div class="md-col-4 mx-auto">
+  <div class="card d-flex align-items-center justifi-content-center">
+    <div class="card-header">
+      <h3>Account Login</h3>
+    </div>
+    <i class="nes-octocat animate my-4"></i>
+    <div class="card-body">
+      <form action="/users/signin" method="POST">
+        <div class="nes-field is-inline">
+          <input type="email" name="email" class="nes-input is-primary mb-3" placeholder="Email" >
+        </div>
+        <div class="nes-field is-inline">
+          <input type="password" name="password" class="nes-input is-primary mb-3" placeholder="Password" >
+        </div>
+        <div class="d-grid gap-2">
+          <button class="nes-btn is-primary" type="submit">
+            SignIn
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

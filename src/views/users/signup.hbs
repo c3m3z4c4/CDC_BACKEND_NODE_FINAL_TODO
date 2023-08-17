@@ -1,1 +1,30 @@
-<h1>Registro de usuarios</h1>
+
+<div class="md-col-4 mx-auto">
+  <div class="card d-flex align-items-center justifi-content-center">
+    <div class="card-header">
+      <h3>Account Register</h3>
+    </div>
+    <div class="card-body">
+      <form action="/users/signup" method="post">
+        <div class="nes-field is-inline">
+          <input type="text" name="name" value="{{name}}" class="nes-input is-success mb-3" placeholder="Name" autofocus>
+        </div>
+        <div class="nes-field is-inline">
+          <input type="email" name="email" value="{{email}}" class="nes-input is-success mb-3" placeholder="Email" >
+        </div>
+        <div class="nes-field is-inline">
+          <input type="password" name="password" value="{{password}}" class="nes-input is-success mb-3" placeholder="Password" >
+        </div>
+        <div class="nes-field is-inline">
+          <input type="password" name="confirm_password" value="{{confirm_password}}" class="nes-input is-success mb-3" placeholder="Confirm password" >
+        </div>
+
+        <div class="d-grid gap-2">
+          <button class="nes-btn is-success" type="submit">
+            SignUp
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
